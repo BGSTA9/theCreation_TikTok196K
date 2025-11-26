@@ -1,2 +1,23 @@
-# theCreation_TikTok196K
-Once the Deconstruction and the Internalization of the project are both successfully fulfilled, now it's time to wrap around the ground to build the should!
+How to Build and Run (The "Magic" Command)
+
+1. **Install the build tool:**
+
+    ```bash
+    
+    pip install maturin
+    ```
+
+2.  **Build the Rust library:**
+    
+    In your terminal, inside the `optitok` folder (where `Cargo.toml` is):
+
+    ```bash
+    maturin develop --release
+    ```
+
+      * `develop`: Installs the package into your current python environment.
+      * `--release`: Turns on all optimizations (makes it 10-100x faster).
+
+3.  **Run the Python script:**
+    
+    Now we can use `SOTATokenizer` in our scripts.
